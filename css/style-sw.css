@@ -111,8 +111,12 @@ body{
 
 code {
   font-family: Consolas,"courier new";
-  color: crimson;
-  padding: 2px;
+  color: var(--bs-body-color);
+  font-size: 105%;
+}
+
+.code {
+  font-family: Consolas,"courier new";
   font-size: 105%;
 }
 

@@ -97,26 +97,60 @@
         </header>
 
         <main class="py-5">
-            <form id="respostas" method="POST" action="">
-                <div class="mb-3">
+            <form id="respostas" method="POST" action="https://formspree.io/f/xpzevoqg">
+                <div class="mb-4">
                     <label class="form-label">Nome Completo</label>
                     <input type="text" class="form-control" name="Nome" autocomplete="none"
                         placeholder="Exemplo: José Antonio Gallo Junior">
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-4">
                     <label class="form-label">Questão 01 - Explique a diferença entre backend e frontend. Cite
                         linguagens utilizadas para o desenvolvimento de cada modo.</label>
                     <textarea name="Questao01" class="form-control" rows="2"></textarea>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Questão 02 - Descreva com base nos estudos realizados em aula o que é o
-                        Padrão MVC?</label>
-                    <textarea name="Questao02" class="form-control" rows="2"></textarea>
+                <div class="mb-4">
+                    <label class="form-label">Questão 02 - Leia o texto abaixo e complete as frases usando as palavras
+                        em destaque.</label>
+                    <p>O padrão de desenvolvimento Model-View-Controller (MVC) é uma arquitetura amplamente utilizada
+                        para o desenvolvimento de aplicativos e sistemas de software. Ele separa a lógica de negócios, a
+                        apresentação de dados e a interação do usuário em três componentes principais: <b
+                            class="text-danger">Modelo</b> (Model),
+                        <b class="text-danger">Visão</b> (View) e <b class="text-danger">Controlador</b> (Controller).
+                        Cada componente possui responsabilidades específicas, o
+                        que facilita a manutenção e a evolução do código.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="row mb-4">
+                                <div class="col-md-3"><input type="text" name="Questao02-01" class="form-control h-100"></div>
+                                <div class="col-md-9"><label>é responsável por apresentar os dados ao usuário e
+                                    fornecer uma interface gráfica ou textual para interação.</label></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row  mb-4">
+                                <div class="col-md-3"><input type="text" name="Questao02-02" class="form-control h-100"></div>
+                                <div class="col-md-9"><label>representa a camada de dados ou a lógica de negócios da aplicação.
+                                    Ele lida com o armazenamento, a recuperação e a manipulação dos dados
+                                    subjacentes.</label></div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-3"><input type="text" name="Questao02-03" class="form-control h-100"></div>
+                                <div class="col-md-9"><label>atua como intermediário entre as camadas. Ele recebe as entradas do usuário,
+                                    processa essas entradas e atualiza os dados conforme necessário. Responsável por
+                                    processar as requisições HTTP.</label></div>
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-4">
                     <label class="form-label">Questão 03 - Nos projetos desenvolvidos em aula (Pokedex e GalloFlix),
                         criamos interfaces para os serviços. Especificamente o desenvolvimento do projeto GalloFlix, foi
                         adotado um padrão de desenvolvimento conhecido como "Padrão de Repositório" ou apenas
@@ -125,7 +159,7 @@
                     <textarea name="Questao03" class="form-control" rows="2"></textarea>
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-4">
                     <label class="form-label">Questão 04 - Na programação orientada a objetos, todos os elementos de um
                         sistema são vistos como objetos que para serem criados necessitam de uma classe. As propriedades
                         ou atributos de uma classe possuem um modificador de acesso ou visibilidade (representado por
@@ -134,17 +168,19 @@
                     <textarea name="Questao04" class="form-control" rows="3"></textarea>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Questão 05 - Para conexão com o banco de dados, foi necessário a
+                <p><b>"Para conexão com o banco de dados, foi necessário a
                         instalação de um pacote que permite realizar a conexão com o banco de dados MariaDB, presente na
-                        aplicação XAMPP. Para pesquisar e baixar esse pacote qual o site utilizado?</label>
-                    <textarea name="Questao05" class="form-control" rows="3"></textarea>
+                        aplicação XAMPP."</b> Com base nesta afirmação responda as questões 05 e 06</p>
+
+                <div class="mb-4">
+                    <label class="form-label">Questão 05 - Para pesquisar e baixar esse pacote qual o site
+                        utilizado?</label>
+                    <textarea name="Questao05" class="form-control" rows="1"></textarea>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Questão 06 - Para conexão com o banco de dados, foi necessário a
-                        instalação de um pacote que permite realizar a conexão com o banco de dados MariaDB, presente na
-                        aplicação XAMPP. Para o nome do pacote instalado para realizar a conexão?</label>
+                <div class="mb-4">
+                    <label class="form-label">Questão 06 - Para o nome do pacote instalado para realizar a
+                        conexão?</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao01" checked>
                         <label class="form-check-label" for="Questao06-Opcao01">Pomodoro</label>
@@ -167,12 +203,46 @@
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Questão 07 - </label>
-                    <textarea name="Questao05" class="form-control" rows="3"></textarea>
+                <div class="mb-4">
+                    <label class="form-label">Questão 07 - Entre as alternativas abaixo, qual representa a forma correta
+                        de criação de um objeto da classe aluno?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao01" checked>
+                        <label class="form-check-label" for="Questao07-Opcao01">
+                            <code>var joao = new Aluno</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao02">
+                        <label class="form-check-label" for="Questao07-Opcao02">
+                            <code>Aluno joao = new Aluno</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao03">
+                        <label class="form-check-label" for="Questao07-Opcao03">
+                            <code>Aluno joao = Aluno()</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao04">
+                        <label class="form-check-label" for="Questao07-Opcao04">
+                            <code>var joao = Aluno()</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao05">
+                        <label class="form-check-label" for="Questao07-Opcao05">
+                            <code>Aluno joao = new Aluno()</code></label>
+                    </div>
                 </div>
 
-                <button type="button" class="btn btn-primary mt-3" onclick="ConfirmSend()">Enviar</button>
+                <div class="mb-4">
+                    <label class="form-label">Questão 08 - Agora é o seu momento de programar! Com base na imagem abaixo
+                        crie a classe correspondente usando a linguagem C#. Você pode programar no VS Code, a classe e copiar e colar aqui!!!</label>
+                    <div class="row">
+                        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-5"><img src="../images/diagram.png" alt="Questão 08"></div>
+                        <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-7"><textarea name="Questao08" class="form-control code" rows="8"></textarea></div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary mt-2" onclick="ConfirmSend()">Enviar</button>
             </form>
         </main>
 
