@@ -1,39 +1,29 @@
-/*
- * Globals
- */
-/* Custom default button */
-.btn-light,
-.btn-light:hover,
-.btn-light:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
+body{
+  overflow-y: scroll;
+}
 
-/*
- * Base structure
- */
-
-body {
+.cover {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
-  max-width: 42em;
-}
-/*
- * Header
- */
-
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
+  color: var(--bs-body-color);
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: var(--bs-gradient);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -41,8 +31,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: var(--bs-gradient);
+  border-bottom-color: var(--bs-gradient);
 }
 
 .bd-placeholder-img {
@@ -116,4 +106,40 @@ body {
 
 .bd-mode-toggle {
     z-index: 1500;
+}
+
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  padding: 2px;
+  font-size: 105%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bs-body-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-body-color); 
+}
+
+.swal2-popup {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
 }

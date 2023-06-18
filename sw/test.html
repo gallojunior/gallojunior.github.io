@@ -14,7 +14,7 @@
     <link href="../css/style-sw.css" rel="stylesheet">
 </head>
 
-<body class="cover d-flex h-100 text-center">
+<body class="d-flex h-100">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check2" viewBox="0 0 16 16">
             <path
@@ -88,7 +88,7 @@
             <div>
                 <h3 class="float-md-start mb-0">Sistema WEB I</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link fw-bold py-1 px-0" href="#">Competências</a>
                     <a class="nav-link fw-bold py-1 px-0" href="#">Projetos</a>
                     <a class="nav-link fw-bold py-1 px-0" href="#">Contatos</a>
@@ -96,17 +96,87 @@
             </div>
         </header>
 
-        <main class="px-3">
-            <h1>Sistemas WEB I</h1>
-            <h4>Avaliação Bimestral - 2º Bimestre</h4>
-            <p class="lead">Com base nos estudos e projetos desenvolvidos em aula, leia atentamente as questões e
-                responda da melhor forma possível.</p>
-            <p class="lead pt-3">
-                <a href="test.html" class="btn btn-secondary btn-lg fw-bold">Começar</a>
-            </p>
+        <main class="py-5">
+            <form id="respostas" method="POST" action="">
+                <div class="mb-3">
+                    <label class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" name="Nome" autocomplete="none"
+                        placeholder="Exemplo: José Antonio Gallo Junior">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 01 - Explique a diferença entre backend e frontend. Cite
+                        linguagens utilizadas para o desenvolvimento de cada modo.</label>
+                    <textarea name="Questao01" class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 02 - Descreva com base nos estudos realizados em aula o que é o
+                        Padrão MVC?</label>
+                    <textarea name="Questao02" class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 03 - Nos projetos desenvolvidos em aula (Pokedex e GalloFlix),
+                        criamos interfaces para os serviços. Especificamente o desenvolvimento do projeto GalloFlix, foi
+                        adotado um padrão de desenvolvimento conhecido como "Padrão de Repositório" ou apenas
+                        "Repositório". Desta forma, criamos uma interface genérica. Qual a função das
+                        interfaces?</label>
+                    <textarea name="Questao03" class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 04 - Na programação orientada a objetos, todos os elementos de um
+                        sistema são vistos como objetos que para serem criados necessitam de uma classe. As propriedades
+                        ou atributos de uma classe possuem um modificador de acesso ou visibilidade (representado por
+                        uma palavra que vem antes do tipo da propriedade). Escreva quais são os 3 modificadores de
+                        acesso do C# e a diferença entre eles.</label>
+                    <textarea name="Questao04" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 05 - Para conexão com o banco de dados, foi necessário a
+                        instalação de um pacote que permite realizar a conexão com o banco de dados MariaDB, presente na
+                        aplicação XAMPP. Para pesquisar e baixar esse pacote qual o site utilizado?</label>
+                    <textarea name="Questao05" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 06 - Para conexão com o banco de dados, foi necessário a
+                        instalação de um pacote que permite realizar a conexão com o banco de dados MariaDB, presente na
+                        aplicação XAMPP. Para o nome do pacote instalado para realizar a conexão?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao01" checked>
+                        <label class="form-check-label" for="Questao06-Opcao01">Pomodoro</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao02">
+                        <label class="form-check-label" for="Questao06-Opcao02">Palmeiras</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao03">
+                        <label class="form-check-label" for="Questao06-Opcao03">Pomelo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao04">
+                        <label class="form-check-label" for="Questao06-Opcao04">Mario&Luigi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao05">
+                        <label class="form-check-label" for="Questao06-Opcao05">MariaDB</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Questão 07 - </label>
+                    <textarea name="Questao05" class="form-control" rows="3"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-primary mt-3" onclick="ConfirmSend()">Enviar</button>
+            </form>
         </main>
 
-        <footer class="mt-auto">
+        <footer class="mt-auto text-center">
             <p>Desenvolvimento por <a href="gallojunior.github.io">José Antonio Gallo Junior</a>, para a <a
                     href="https://www.etecbarrabonita.com.br">Etec Comendador João Rays</a>.</p>
         </footer>
@@ -114,6 +184,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.3.0/dist/polyfill.min.js"></script>
+    <script src="../js/confirmation.js"></script>
 </body>
 
 </html>
