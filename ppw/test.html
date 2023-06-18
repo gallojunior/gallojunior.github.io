@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="José Antonio Gallo Junor">
     <meta name="description" content="Página de avaliação">
-    <title>Sistemas Web I</title>
+    <title>Programação para Web II</title>
     <link rel="icon" href="../images/logo.png">
     <meta name="theme-color" content="#712cf9">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +86,7 @@
     <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
-                <h3 class="float-md-start mb-0">Sistema WEB I</h3>
+                <h3 class="float-md-start mb-0">Programação para Web II</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link fw-bold py-1 px-0" href="#">Competências</a>
@@ -97,17 +97,17 @@
         </header>
 
         <main class="py-5">
-            <form id="respostas" method="POST" action="https://formspree.io/f/xpzevoqg">
+            <form id="respostas" method="POST" action="https://formspree.io/f/mjvdnpyw">
                 <div class="mb-4">
                     <label class="form-label">Nome Completo</label>
-                    <input type="text" class="form-control" name="Nome" autocomplete="none"
-                        placeholder="Exemplo: José Antonio Gallo Junior">
+                    <input type="text" class="form-control" id="Nome" name="Nome" autocomplete="none"
+                        placeholder="Exemplo: José Antonio Gallo Junior" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="form-label">Questão 01 - Explique a diferença entre backend e frontend. Cite
                         linguagens utilizadas para o desenvolvimento de cada modo.</label>
-                    <textarea name="Questao01" class="form-control" rows="2"></textarea>
+                    <textarea name="Questao01" class="form-control" rows="2" required></textarea>
                 </div>
 
                 <div class="mb-4">
@@ -124,26 +124,34 @@
                     <ul>
                         <li>
                             <div class="row mb-4">
-                                <div class="col-md-3"><input type="text" name="Questao02-01" class="form-control h-100"></div>
+                                <div class="col-md-3"><input type="text" name="Questao02-01" class="form-control h-100"
+                                        required>
+                                </div>
                                 <div class="col-md-9"><label>é responsável por apresentar os dados ao usuário e
-                                    fornecer uma interface gráfica ou textual para interação.</label></div>
+                                        fornecer uma interface gráfica ou textual para interação.</label></div>
                             </div>
                         </li>
                         <li>
                             <div class="row  mb-4">
-                                <div class="col-md-3"><input type="text" name="Questao02-02" class="form-control h-100"></div>
-                                <div class="col-md-9"><label>representa a camada de dados ou a lógica de negócios da aplicação.
-                                    Ele lida com o armazenamento, a recuperação e a manipulação dos dados
-                                    subjacentes.</label></div>
+                                <div class="col-md-3"><input type="text" name="Questao02-02" class="form-control h-100"
+                                        required>
+                                </div>
+                                <div class="col-md-9"><label>representa a camada de dados ou a lógica de negócios da
+                                        aplicação.
+                                        Ele lida com o armazenamento, a recuperação e a manipulação dos dados
+                                        subjacentes.</label></div>
                             </div>
-                            
+
                         </li>
                         <li>
                             <div class="row">
-                                <div class="col-md-3"><input type="text" name="Questao02-03" class="form-control h-100"></div>
-                                <div class="col-md-9"><label>atua como intermediário entre as camadas. Ele recebe as entradas do usuário,
-                                    processa essas entradas e atualiza os dados conforme necessário. Responsável por
-                                    processar as requisições HTTP.</label></div>
+                                <div class="col-md-3"><input type="text" name="Questao02-03" class="form-control h-100"
+                                        required>
+                                </div>
+                                <div class="col-md-9"><label>atua como intermediário entre as camadas. Ele recebe as
+                                        entradas do usuário,
+                                        processa essas entradas e atualiza os dados conforme necessário. Responsável por
+                                        processar as requisições HTTP.</label></div>
                             </div>
                         </li>
                     </ul>
@@ -152,11 +160,10 @@
 
                 <div class="mb-4">
                     <label class="form-label">Questão 03 - Nos projetos desenvolvidos em aula (Pokedex e GalloFlix),
-                        criamos interfaces para os serviços. Especificamente no desenvolvimento do projeto GalloFlix, foi
-                        adotado um padrão de desenvolvimento conhecido como "Padrão de Repositório" ou apenas
-                        "Repositório". Desta forma, criamos uma interface genérica. Qual a função das
-                        interfaces?</label>
-                    <textarea name="Questao03" class="form-control" rows="2"></textarea>
+                        criamos interfaces para os serviços. Especificamente no desenvolvimento do projeto GalloFlix,
+                        foi
+                        criada uma interface de serviço de email. Qual a função das interfaces na programação?</label>
+                    <textarea name="Questao03" class="form-control" rows="2" required></textarea>
                 </div>
 
                 <div class="mb-4">
@@ -165,7 +172,7 @@
                         ou atributos de uma classe possuem um modificador de acesso ou visibilidade (representado por
                         uma palavra que vem antes do tipo da propriedade). Escreva quais são os 3 modificadores de
                         acesso do C# e a diferença entre eles.</label>
-                    <textarea name="Questao04" class="form-control" rows="3"></textarea>
+                    <textarea name="Questao04" class="form-control" rows="3" required></textarea>
                 </div>
 
                 <p><b>"Para conexão com o banco de dados, foi necessário a
@@ -175,30 +182,35 @@
                 <div class="mb-4">
                     <label class="form-label">Questão 05 - Para pesquisar e baixar esse pacote qual o site
                         utilizado?</label>
-                    <textarea name="Questao05" class="form-control" rows="1"></textarea>
+                    <textarea name="Questao05" class="form-control" rows="1" required></textarea>
                 </div>
 
                 <div class="mb-4">
                     <label class="form-label">Questão 06 - Para o nome do pacote instalado para realizar a
                         conexão?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao01" value="Pomodoro" checked>
-                        <label class="form-check-label" for="Questao06-Opcao01" >Pomodoro</label>
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao01"
+                            value="Pomodoro" checked>
+                        <label class="form-check-label" for="Questao06-Opcao01">Pomodoro</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao02" value="Palmeiras">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao02"
+                            value="Palmeiras">
                         <label class="form-check-label" for="Questao06-Opcao02">Palmeiras</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao03" value="Pomelo">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao03"
+                            value="Pomelo">
                         <label class="form-check-label" for="Questao06-Opcao03">Pomelo</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao04" value="Mario&Luigi">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao04"
+                            value="Mario&Luigi">
                         <label class="form-check-label" for="Questao06-Opcao04">Mario&Luigi</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao05" value="MariaDB">
+                        <input class="form-check-input" type="radio" name="Questao06" id="Questao06-Opcao05"
+                            value="MariaDB">
                         <label class="form-check-label" for="Questao06-Opcao05">MariaDB</label>
                     </div>
                 </div>
@@ -207,27 +219,32 @@
                     <label class="form-label">Questão 07 - Entre as alternativas abaixo, qual representa a forma correta
                         de criação de um objeto da classe aluno?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao01" value="var joao = new Aluno" checked>
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao01"
+                            value="var joao = new Aluno" checked>
                         <label class="form-check-label" for="Questao07-Opcao01">
                             <code>var joao = new Aluno</code></label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao02" value="Aluno joao = new Aluno">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao02"
+                            value="Aluno joao = new Aluno">
                         <label class="form-check-label" for="Questao07-Opcao02">
                             <code>Aluno joao = new Aluno</code></label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao03" value="Aluno joao = Aluno()">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao03"
+                            value="Aluno joao = Aluno()">
                         <label class="form-check-label" for="Questao07-Opcao03">
                             <code>Aluno joao = Aluno()</code></label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao04" value="var joao = Aluno()">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao04"
+                            value="var joao = Aluno()">
                         <label class="form-check-label" for="Questao07-Opcao04">
                             <code>var joao = Aluno()</code></label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao05" value="Aluno joao = new Aluno()">
+                        <input class="form-check-input" type="radio" name="Questao07" id="Questao07-Opcao05"
+                            value="Aluno joao = new Aluno()">
                         <label class="form-check-label" for="Questao07-Opcao05">
                             <code>Aluno joao = new Aluno()</code></label>
                     </div>
@@ -235,10 +252,102 @@
 
                 <div class="mb-4">
                     <label class="form-label">Questão 08 - Agora é o seu momento de programar! Com base na imagem abaixo
-                        crie a classe correspondente usando a linguagem C#. Você pode programar no VS Code, a classe e copiar e colar aqui!!!</label>
+                        crie a classe correspondente usando a linguagem C#. Você pode programar no VS Code, a classe e
+                        copiar e colar aqui!!!</label>
                     <div class="row">
-                        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-5"><img src="../images/diagram.png" alt="Questão 08"></div>
-                        <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-7"><textarea name="Questao08" class="form-control code" rows="8"></textarea></div>
+                        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-5"><img src="../images/diagram.png"
+                                alt="Questão 08"></div>
+                        <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-7"><textarea name="Questao08"
+                                class="form-control code" rows="8"></textarea></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Questão 09 - Qual a razão de adicionarmos DataAnnotations em nossas
+                        classes de entidade? Cite algumas das utilizadas em nossos projetos.</label>
+                    <textarea name="Questao09" class="form-control" rows="3" required></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Questão 10 - Leia o texto abaixo e complete as frases usando as palavras
+                        em destaque.</label>
+                    <p>O Entity Framework (EF) é um framework de mapeamento objeto-relacional (ORM) desenvolvido pela
+                        Microsoft. Ele fornece uma maneira simplificada de trabalhar com bancos de dados relacionais,
+                        permitindo que os desenvolvedores acessem, manipulem e gerenciem os dados do banco de dados
+                        usando objetos e classes no código. <br>
+                        O Entity Framework suporta três abordagens principais para o desenvolvimento de aplicativos:
+                        <b class="text-danger">Model First</b>,
+                        <b class="text-danger">Database First</b> e
+                        <b class="text-danger">Code First</b>.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="row mb-4">
+                                <div class="col-md-3"><input type="text" name="Questao10-01" class="form-control h-100"
+                                        required>
+                                </div>
+                                <div class="col-md-9"><label>Nessa abordagem, o Entity Framework gera classes de modelo
+                                        de dados a partir de um banco de dados existente.</label></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row  mb-4">
+                                <div class="col-md-3"><input type="text" name="Questao10-02" class="form-control h-100"
+                                        required>
+                                </div>
+                                <div class="col-md-9"><label>Nessa abordagem, você cria as classes de modelo de dados
+                                        manualmente no código e o Entity Framework gera o banco de dados automaticamente
+                                        com base nessas classes. </label></div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-3"><input type="text" name="Questao10-03" class="form-control h-100"
+                                        required>
+                                </div>
+                                <div class="col-md-9"><label>Nessa abordagem, você projeta o modelo de dados visualmente
+                                        usando o Designer do Entity Framework.</label></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Questão 11 - Qual é o nome do framework de autenticação e autorização
+                        desenvolvido pela Microsoft. Ele é uma extensão do ASP.NET e fornece recursos avançados para
+                        gerenciar a autenticação de usuários, autorização de acesso e armazenamento de informações
+                        relacionadas a identidades em um aplicativo web.</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao11" id="Questao11-Opcao01"
+                            value="Identity" checked>
+                        <label class="form-check-label" for="Questao11-Opcao01">
+                            <code>Identity</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao11" id="Questao11-Opcao02"
+                            value="Authorize">
+                        <label class="form-check-label" for="Questao11-Opcao02">
+                            <code>Authorize</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao11" id="Questao11-Opcao03"
+                            value="Authentication">
+                        <label class="form-check-label" for="Questao11-Opcao03">
+                            <code>Authentication</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao11" id="Questao11-Opcao04"
+                            value="AppUser">
+                        <label class="form-check-label" for="Questao11-Opcao04">
+                            <code>AppUser</code></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Questao11" id="Questao11-Opcao05"
+                            value="UserManager">
+                        <label class="form-check-label" for="Questao11-Opcao05">
+                            <code>UserManager</code></label>
                     </div>
                 </div>
 
@@ -258,6 +367,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.3.0/dist/polyfill.min.js"></script>
     <script src="../js/confirmation.js"></script>
+
 </body>
 
 </html>
