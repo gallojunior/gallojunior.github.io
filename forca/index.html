@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-4 mx-auto text-center">
+                <h1>Jogo da Forca</h1>
+                <canvas id="canvas" width="200" height="200"></canvas>
+                <h2 class="mb-3"></h2>
+                <button id="btnReiniciar" class="btn btn-success mb-3"
+                    onclick="iniciarJogo()">REINICIAR</button>
+                <div id="botoes"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
